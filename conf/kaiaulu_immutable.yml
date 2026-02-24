@@ -9,8 +9,7 @@ version_control:
   # Where is the git log located locally?
   # This is the path to the .git of the project repository you are analyzing.
   # The .git is hidden, so you can see it using `ls -a`
-  # log: ../../rawdata/kaiaulu/git_repo/kaiaulu/.git (original)
-  log: /home/giyoung7/kaiaulu/.git
+  log: ../../rawdata/kaiaulu/git_repo/kaiaulu/.git
   # From where the git log was downloaded?
   log_url: https://github.com/sailuh/kaiaulu
   # List of branches used for analysis
@@ -46,8 +45,7 @@ issue_tracker:
 vulnerabilities:
   # Folder path with nvd cve feeds (e.g. nvdcve-1.1-2018.json)
   # Download at: https://nvd.nist.gov/vuln/data-feeds
-  # nvd_feed: rawdata/nvdfeed (original)
-  nvd_feed: /home/giyoung7/nvd
+  nvd_feed: rawdata/nvdfeed
 
 # Commit message CVE or Issue Regular Expression (regex)
 # See project's commit message for examples to create the regex

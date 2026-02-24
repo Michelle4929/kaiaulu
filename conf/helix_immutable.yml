@@ -7,7 +7,7 @@ project:
 
 version_control:
   # Where is the git log located locally?
-  log: /home/giyoung7/helix/.git
+  log: ../../rawdata/helix/git_repo/helix/.git
   # From where the git log was downloaded?
   log_url: https://github.com/apache/helix
   # List of branches used for analysis

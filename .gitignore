@@ -8,6 +8,10 @@ docs
 pkgdown
 rawdata
 .Rproj.user
+
+# tools.yml
+tools.yml
+
 # R Markdown knitted outputs
 vignettes/*.html
 vignettes/*_files/

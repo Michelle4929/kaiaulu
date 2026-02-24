@@ -76,10 +76,6 @@ project <- parse_config("../conf/kaiaulu_immutable.yml")
 analysis <- parse_config("../conf/analysis2.yml")
 
 perceval_path <- get_tool_project("perceval", tool)
-# Used for old config
-# git_repo_path <- get_git_repo_path(conf)
-# git_branch <- get_git_branches(conf)[1]
-# nvdfeed_folder_path <- get_nvdfeed_folder_path(conf)
 
 # Used for project.yml
 git_repo_path <- get_git_repo_path(project)
@@ -89,6 +85,11 @@ nvdfeed_folder_path <- get_nvdfeed_folder_path(project)
 # Used for analysis.yml
 file_extensions <- get_file_extensions(analysis)
 substring_filepath <- get_substring_filepath(analysis)
+
+# Used for previous config
+# git_repo_path <- get_git_repo_path(conf)
+# git_branch <- get_git_branches(conf)[1]
+# nvdfeed_folder_path <- get_nvdfeed_folder_path(conf)
 
 # Filters
 # file_extensions <- get_file_extensions(conf)
