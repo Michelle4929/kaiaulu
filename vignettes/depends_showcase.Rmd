@@ -32,7 +32,7 @@ require(knitr)
 tool <- parse_config("../tools.yml")
 #conf <- parse_config("../conf/apr.yml")
 conf <- parse_config("../conf/helix.yml")
-git_repo_path <- get_git_repo_path(conf)
+git_repo_path <- dirname(get_git_repo_path(conf))
 
 # Depends parameters
 depends_jar_path <- get_tool_project("depends", tool)

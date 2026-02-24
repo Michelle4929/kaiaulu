@@ -1,13 +1,13 @@
 # https://github.com/chaoss/grimoirelab-perceval
-perceval: /Library/Frameworks/Python.framework/Versions/3.12/bin/perceval
+perceval: /home/giyoung7/.local/bin/perceval
 # https://github.com/multilang-depends/depends
-depends: ~/depends-0.9.6/depends.jar
+depends: /home/giyoung7/tools/depends-0.9.6/depends.jar
 # https://github.com/tsantalis/RefactoringMiner#running-refactoringminer-from-the-command-line
 refactoring_miner: ~/RefactoringMiner-1.0/bin/RefactoringMiner
 # https://github.com/boyter/scc
 scc: ~/scc/scc
 # universal-ctags
-utags: /usr/local/Cellar/universal-ctags/HEAD-62f0144/bin/ctags
+utags: /usr/bin/ctags
 # https://archdia.com/
 dv8: /Applications/DV84/bin/dv8-console
 # OSLOM: http://oslom.org/
@@ -18,6 +18,6 @@ srcml: /usr/local/bin/srcml
 # pattern4: https://users.encs.concordia.ca/~nikolaos/pattern_detection.html
 pattern4: ~/Desktop/kaiaulu/tools/pattern4.jar
 # Scitools Understand: https://scitools.com/
-scitools: /Applications/Understand.app/Contents/MacOS/und
+scitools: /home/giyoung7/tools/scitools/bin/linux64/und
 # Temporary folder path for intermediate files
 tmp: /tmp

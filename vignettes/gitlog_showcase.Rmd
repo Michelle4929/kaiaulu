@@ -4,6 +4,7 @@ output:
   html_document:
     toc: true
     number_sections: true
+    self_contained: false
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{Exploring Git Logs}
@@ -68,11 +69,19 @@ The following code block reads the information explained just now:
 ```{r}
 tool <- parse_config("../tools.yml")
 # conf <- parse_config("../conf/kaiaulu.yml")
+<<<<<<< HEAD
 conf <- parse_config("../conf/helix.yml")
 
 # Reads 2 configs
 # project <- parse_config("../conf/kaiaulu_immutable.yml")
 # analysis <- parse_config("../conf/analysis2.yml")
+=======
+# conf <- parse_config("../conf/helix.yml")
+
+# Reads 2 configs
+project <- parse_config("../conf/kaiaulu_immutable.yml")
+analysis <- parse_config("../conf/analysis1.yml")
+>>>>>>> d89a234 (Save work before switching to issue 359 branch)
 
 perceval_path <- get_tool_project("perceval", tool)
 git_repo_path <- get_git_repo_path(conf)

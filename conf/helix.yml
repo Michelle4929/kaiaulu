@@ -34,7 +34,7 @@ project:
 
 version_control:
   # Where is the git log located locally?
-  log: ../../rawdata/helix/git_repo/helix/.git
+  log:  /home/giyoung7/helix/.git
   # From where the git log was downloaded?
   log_url: https://github.com/apache/helix
   # List of branches used for analysis
@@ -231,9 +231,9 @@ tool:
       - Use
       - Type GenericArgument
     # Where the files to analyze should be stored
-    project_path: ../../rawdata/helix/git_repo/helix/
+    project_path: /home/giyoung7/helix
     # Where the output for the understands analysis is stored
-    output_path: ../../analysis/helix/understand/
+    output_path: analysis/helix/understand/
 # Analysis Configuration #
 analysis:
   # You can specify the intervals in 2 ways: window, or enumeration

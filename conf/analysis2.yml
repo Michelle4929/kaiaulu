@@ -4,9 +4,16 @@
 filter:
   keep_filepaths_ending_with:
     - R
+    - cpp
+    - c
+    - h
+    - java
+    - js
+    - py
+    - cc
   remove_filepaths_containing:
     # - test
-    - ""
+    - "something"
 
 
 # Third Party Tools Configuration #
