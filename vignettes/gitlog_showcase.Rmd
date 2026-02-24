@@ -70,7 +70,6 @@ The following code block reads the information explained just now:
 tool <- parse_config("../tools.yml")
 # conf <- parse_config("../conf/kaiaulu.yml")
 # conf <- parse_config("../conf/helix.yml")
-conf <- parse_config("../conf/helix.yml")
 
 # Reads 2 configs
 project <- parse_config("../conf/kaiaulu_immutable.yml")
