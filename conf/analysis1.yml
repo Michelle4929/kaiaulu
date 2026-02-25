@@ -23,7 +23,7 @@ tool:
   depends:
     # accepts one language at a time: cpp, java, ruby, python, pom
     # You can obtain this information on OpenHub or the project GiHub page right pane.
-    code_language: java
+    # code_language: java
     # Specify which types of Dependencies to keep - see the Depends tool README.md for details.
     keep_dependencies_type:
       - Cast
@@ -84,6 +84,14 @@ tool:
         - f # functions
       r:
         - f # functions
+  understand:
+    # Specify which types of Dependencies to keep
+    keep_dependencies_type:
+      - Import
+      - Call
+      - Create
+      - Use
+      - Type GenericArgument
   # # srcML allow to parse src code as text (e.g. identifiers)
   # srcml:
   #   # The file path to where you wish to store the srcml output of the project

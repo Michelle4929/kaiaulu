@@ -80,3 +80,17 @@ issue_tracker:
 commit_message_id_regex:
   issue_id: \#[0-9]+
   #cve_id: ?
+
+tool:
+  # Depends allow to parse file-file static dependencies.
+  depends:
+    # accepts one language at a time: cpp, java, ruby, python, pom
+    # You can obtain this information on OpenHub or the project GiHub page right pane.
+    code_language: java
+  understand:
+    # Accepts one language at a time: ada, assembly, c/c++, c#, fortran, java, jovial, delphi/pascal, python, vhdl, basic, javascript
+    code_language: java
+    # Where the files to analyze should be stored
+    project_path: /home/giyoung7/helix
+    # Where the output for the understands analysis is stored
+    output_path: analysis/helix/understand/
