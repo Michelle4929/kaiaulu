@@ -89,6 +89,11 @@ parse_perceval_path <- get_tool_project("perceval", tools)
 # Load project configuration
 conf <- parse_config("../conf/helix.yml")
 mbox_file_path <- get_mbox_path(conf, "project_key_1")
+
+# Reads 2 configs
+project <- parse_config("../conf/helix_immutable.yml")
+# analysis <- parse_config("../conf/analysis1.yml")
+mbox_file_path <- get_mbox_path(project, "project_key_1")
 ```
 
 # Downloaders and Refreshers
@@ -107,6 +112,12 @@ Now, we can use the getter functions to retrieve the configuration parameters fo
 conf <- parse_config("../conf/openssl.yml")
 pipermail_mailing_list <- get_pipermail_domain(conf, "project_key_1")
 pipermail_save_folder_path <- get_pipermail_path(conf, "project_key_1")
+
+# Reads 2 configs
+project <- parse_config("../conf/openssl_immutable.yml")
+# analysis <- parse_config("../conf/analysis1.yml")
+pipermail_mailing_list <- get_pipermail_domain(project, "project_key_1")
+pipermail_save_folder_path <- get_pipermail_path(project, "project_key_1")
 
 # Define the date range
 pipermail_start_year_month <- 202310

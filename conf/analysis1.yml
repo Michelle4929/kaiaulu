@@ -13,6 +13,8 @@ filter:
     - cc
   remove_filepaths_containing:
     - test
+  remove_filepaths_on_commit_size_greather_than:
+    - 30
 
 
 # Third Party Tools Configuration #
@@ -23,7 +25,7 @@ tool:
   depends:
     # accepts one language at a time: cpp, java, ruby, python, pom
     # You can obtain this information on OpenHub or the project GiHub page right pane.
-    # code_language: java
+    code_language: java
     # Specify which types of Dependencies to keep - see the Depends tool README.md for details.
     keep_dependencies_type:
       - Cast
@@ -85,6 +87,8 @@ tool:
       r:
         - f # functions
   understand:
+    # Accepts one language at a time: ada, assembly, c/c++, c#, fortran, java, jovial, delphi/pascal, python, vhdl, basic, javascript
+    code_language: java
     # Specify which types of Dependencies to keep
     keep_dependencies_type:
       - Import
@@ -92,6 +96,11 @@ tool:
       - Create
       - Use
       - Type GenericArgument
+    # Where the files to analyze should be stored
+    project_path: /home/giyoung7/helix
+    # Where the output for the understands analysis is stored
+    output_path: analysis/helix/understand/
+
   # # srcML allow to parse src code as text (e.g. identifiers)
   # srcml:
   #   # The file path to where you wish to store the srcml output of the project
